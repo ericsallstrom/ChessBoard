@@ -2,7 +2,7 @@
 
 using System.Data.Common;
 
-namespace ChessBoard2
+namespace ChessBoard
 {
     internal class Program
     {
