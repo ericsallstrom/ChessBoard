@@ -25,8 +25,8 @@ namespace ChessBoard2
                 // else, it returns the number deciding how many rows/columns the chess board will have
                 if (boardSize <= 0 || boardSize > 26)
                 {
-                    Console.WriteLine("Fel input! Du måste ange storleken på brädet med ett positivt heltal och\n" +
-                        "du kan inte ange ett tal större än 26." +
+                    Console.WriteLine("Fel input! Du måste ange storleken på brädet med ett " +
+                        "\npositivt heltal och du kan inte ange ett tal större än 26." +
                         "\nTryck \"ENTER\" och försök igen.");
                     Console.ReadKey();
                     Console.Clear();
