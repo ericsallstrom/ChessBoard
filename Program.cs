@@ -80,7 +80,11 @@ namespace ChessBoard
                             Thread.Sleep(1500);
                             continue;
                         }
-                        else if (row + 1 > boardSize || column > boardSize)
+                        // the index of ChessBoard-array starts with 0, therefore we need to make sure that the user
+                        // cannot place their chess piece outside the range of the chess board. It's solved by
+                        // adding +1 to both row and column, so that the coordinates prompted by the user
+                        // coincides with the index of the array, e.g. A1 = 0,0
+                        else if (row + 1 > boardSize || column + 1 > boardSize)
                         {
                             Console.WriteLine("Fel input! Du kan inte placera pjäsen utanför schackbrädet.");
                             Thread.Sleep(1500);
